@@ -1,0 +1,14 @@
+/* Raleway and Rancho font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&family=Rancho&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+@layer components{
+  .coffeeContainer{
+    @apply max-w-[1920px] px-8 sm:px-10 md:px-[60px] lg:px-[100px] xl:px-[150px] 2xl:px-[230px] max-[1920px]:px-[290px]
+  }
+}
