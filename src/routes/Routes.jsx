@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import ProductAdd from "../pages/ProductAdd";
 import CoffeeDetails from "../pages/CoffeeDetails";
 import NotFoundPage from "../pages/NotFoundPage";
+import { baseURL } from "../utilitis/helper";
 
 
 const Routes = createBrowserRouter([
@@ -14,7 +15,8 @@ const Routes = createBrowserRouter([
         children:[
             {
                 path:'/',
-                element: <Home/>
+                element: <Home/>,
+                loader:()=>fetch(`${baseURL}/coffee`)
             },
             {
                 path:'/coffee/add',
@@ -22,11 +24,13 @@ const Routes = createBrowserRouter([
             },
             {
                 path:'/coffee/update/:id',
-                element: <ProductAdd update={true}/>
+                element: <ProductAdd update={true}/>,
+                loader:({params})=>fetch(`${baseURL}/coffee/${params.id}`)
             },
             {
                 path:'/coffee/details/:id',
-                element: <CoffeeDetails/>
+                element: <CoffeeDetails/>,
+                loader:({params})=>fetch(`${baseURL}/coffee/${params.id}`)
             }
         ]
 
