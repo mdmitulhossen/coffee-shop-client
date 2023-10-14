@@ -3,6 +3,9 @@ import { Outlet } from "react-router-dom";
 // images import
 import header from '../assets/more/header.jpg';
 import logo from '../assets/more/logo1.png'
+import Contact from "../components/Contact";
+import Footer from "../components/Footer/Footer";
+
 
 const MainLayout = () => {
     return (
@@ -18,6 +21,9 @@ const MainLayout = () => {
 
 
             <Outlet />
+
+            <Contact/>
+          <Footer/>
         </div>
     );
 };
