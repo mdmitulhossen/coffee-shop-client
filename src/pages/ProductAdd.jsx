@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import bg from '../assets/more/add-new.png'
 
-const ProductAdd = () => {
+const ProductAdd = ({ update }) => {
     const navigate = useNavigate();
     window.scrollTo({
         top: 0,
@@ -24,7 +24,11 @@ const ProductAdd = () => {
                 </div>
                 <div className='bg-[#F4F3F0] rounded px-[30px] md:px-[90px] py-[70px] '>
                     <div>
-                        <p className='text-[#374151] text-[45px] text-center font-rancho mb-3'>Add New Coffee</p>
+                        <p className='text-[#374151] text-[45px] text-center font-rancho mb-3'>
+                            {
+                                update ? 'Update Existing Coffee Details' : 'Add New Coffee'
+                            }
+                        </p>
                         <p className='text-[#374151]/70 text-center font-raleway mb-10'>It is a long established fact that a reader will be distraceted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here.</p>
                     </div>
 
@@ -59,10 +63,15 @@ const ProductAdd = () => {
                                 <input className='w-full p-2 rounded-md focus:outline-[#E3B577]' type="text" placeholder='Enter coffee Price' id='Price' name='price' />
                             </div>
                         </div>
+                        {
+                            update ?
+                                <input className='px-4 w-full py-2 mt-4 rounded font-rancho bg-[#E3B577] duration-200 hover:text-white cursor-pointer' type="submit" value='Update Coffee Details' />
+                                :
+                                <input className='px-4 w-full py-2 mt-4 rounded font-rancho bg-[#E3B577] duration-200 hover:text-white cursor-pointer' type="submit" value='Add Coffe' />
+                        }
 
 
 
-                        <input className='px-4 w-full py-2 mt-4 rounded font-rancho bg-[#E3B577] duration-200 hover:text-white cursor-pointer' type="submit" value='Add Coffe' />
                     </form>
 
                 </div>

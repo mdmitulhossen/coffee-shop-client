@@ -3,12 +3,14 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../pages/Home";
 import ProductAdd from "../pages/ProductAdd";
 import CoffeeDetails from "../pages/CoffeeDetails";
+import NotFoundPage from "../pages/NotFoundPage";
 
 
 const Routes = createBrowserRouter([
     {
         path:'/',
         element: <MainLayout/>,
+        errorElement:<NotFoundPage/>,
         children:[
             {
                 path:'/',
@@ -16,7 +18,11 @@ const Routes = createBrowserRouter([
             },
             {
                 path:'/coffee/add',
-                element: <ProductAdd/>
+                element: <ProductAdd update={false}/>
+            },
+            {
+                path:'/coffee/update/:id',
+                element: <ProductAdd update={true}/>
             },
             {
                 path:'/coffee/details/:id',
