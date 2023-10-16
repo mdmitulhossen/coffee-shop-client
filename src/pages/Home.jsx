@@ -70,10 +70,10 @@ const Home = () => {
             </div>
 
             {/* Our Popular products */}
-            <div className="max-w-[1920px] mx-auto relative">
+            <div className="max-w-[1920px] mt-20  mx-auto relative overflow-hidden">
                 <img className="absolute left-0 top-0 w-[130px] md:w-[250px] opacity-50 z-10" src={overlay1} alt="" />
                 <img className="absolute right-0 bottom-0 md:w-[250px] w-[130px] z-10" src={overlay2} alt="" />
-                <div className="coffeeContainer mt-20 mb-10">
+                <div className="coffeeContainer  mb-10">
                     {/* Section Head */}
                     <div className="w-full text-center">
                         <p className="text-[#1B1A1A] font-raleway"> --- Sip & Savor --- </p>
