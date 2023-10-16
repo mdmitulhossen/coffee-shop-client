@@ -39,7 +39,7 @@ const ProductsCard = ({ item, items, setItems }) => {
 
     };
     return (
-        <div className="bg-[#F5F4F1] w-full py-2 pl-2 pr-8 rounded-lg">
+        <div className="bg-[#F5F4F1] w-full py-2 pl-2 pr-8 rounded-lg z-50">
             <div className='flex justify-between items-center'>
                 <div className='max-h-[240px] max-w-[150px] '>
                     <img className='w-full h-full object-cover' src={photo} alt="" />
