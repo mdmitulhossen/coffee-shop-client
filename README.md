@@ -1,8 +1,12 @@
-# React + Vite
+##  Espresso Emporium 
+### Coffee Shop Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br>
 
-Currently, two official plugins are available:
+### Key Features: 
+- Espresso Emporium showcases a variety of coffee categories with detailed information for a comprehensive coffee exploration experience.
+- Users can create personalized coffee profiles, including unique details and preferences, tailoring the coffee experience to their liking.
+- Efficiently manage all aspects of the coffee
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies: 
+- React JS | Express JS | MongoDB | Tailwind CSS 
